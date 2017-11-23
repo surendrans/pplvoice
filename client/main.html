@@ -1,0 +1,80 @@
+<head>
+  <title>pplvoice</title>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> info}}
+   <div class="map-container">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
+
+  <style>
+  .map-container {
+  width: 800px;
+  max-width: 100%;
+  height: 500px;
+}
+.typ
+{
+  padding-left: 10px;
+}
+.feedback_success{
+display: none;
+}
+  </style>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA55Wf98EmnaqTPGojvLvc9SrF4Rg7Jht8",
+    authDomain: "spritle-com-api-project-144642468783.firebaseapp.com",
+    databaseURL: "https://spritle-com-api-project-144642468783.firebaseio.com",
+    projectId: "spritle.com:api-project-144642468783",
+    storageBucket: "",
+    messagingSenderId: "144642468783"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <!-- <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul> -->
+</template>
+
+
+<!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA55Wf98EmnaqTPGojvLvc9SrF4Rg7Jht8",
+    authDomain: "spritle-com-api-project-144642468783.firebaseapp.com",
+    databaseURL: "https://spritle-com-api-project-144642468783.firebaseio.com",
+    projectId: "spritle.com:api-project-144642468783",
+    storageBucket: "",
+    messagingSenderId: "144642468783"
+  };
+  firebase.initializeApp(config);
+</script> -->
